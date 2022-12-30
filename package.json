@@ -1,0 +1,14 @@
+{
+  "name": "root-config-single-spa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ngtruongthanh98/root-config-single-spa.git",
+  "author": "ThanhNT26 <ngtruongthanh98@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "single-spa": "^5.9.4"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0"
+  }
+}

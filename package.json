@@ -1,14 +1,32 @@
 {
-  "name": "root-config-single-spa",
+  "name": "@mfe/root-config",
   "version": "1.0.0",
-  "main": "index.js",
+  "scripts": {
+    "serve": "webpack serve --port 9000 --env isLocal",
+    "build": "concurrently yarn:build:*",
+    "build:webpack": "webpack --mode=production"
+  },
   "repository": "git@github.com:ngtruongthanh98/root-config-single-spa.git",
-  "author": "ThanhNT26 <ngtruongthanh98@gmail.com>",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "single-spa": "^5.9.4"
+    "@babel/core": "^7.20.7",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "@types/systemjs": "^6.13.1",
+    "babel-loader": "^9.1.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "path": "^0.12.7",
+    "single-spa": "^5.9.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-config-single-spa": "^5.3.0",
+    "webpack-merge": "^5.8.0"
   },
   "devDependencies": {
-    "html-webpack-plugin": "^5.5.0"
+    "webpack-dev-server": "^4.11.1"
   }
 }
